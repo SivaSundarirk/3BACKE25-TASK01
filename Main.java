@@ -1,16 +1,33 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
- public class Main
+import java.util.Scanner;
+class Main
 {
-    public static void main(String[] args)
+    public static void main(String[] agrs)
+    /**
+     * To print the even number
+     * until we print the even the loop continusoly get thr number from the user
+     * @param args
+     */
     {
-        for (int i=1;i<=5;i++)
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter a number");
+        int number=scan.nextInt();
+        if(number%2==0)
         {
-            for (int j=1;j<=i;j++)
+            System.out.println("This is  a even number");
+        }
+        else
+        {
+            for(int i=0;i<50;i++)
             {
-                System.out.print("*");
+                Scanner scan2=new Scanner(System.in);
+                System.out.print("Enter a number");
+                int number2=scan2.nextInt();
+                if(number2%2==0)
+                {
+                    System.out.println("This is even number");
+                    break;
+                }
             }
-            System.out.println();
         }
     }
 }
